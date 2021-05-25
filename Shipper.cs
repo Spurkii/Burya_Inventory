@@ -42,7 +42,7 @@ namespace Burya_Inventory
                         manifest[1] += 1;
                         break;
 
-                    case "Baseball GLove":
+                    case "Baseball Glove":
                         manifest[2] += 1;
                         break;
 

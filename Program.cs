@@ -27,7 +27,8 @@ namespace Burya_Inventory
                 {
                     Console.WriteLine("1 " + product + " has been added\n" +
                         "Press any key to return to the menu");
-                    Console.ReadLine();
+                    Console.ReadKey();
+                    Console.Clear();
                 }
 
                 void Show_Products(string product, int count)
@@ -73,7 +74,8 @@ namespace Burya_Inventory
 
                         Console.WriteLine(Manifest[3] + " Crackers\n" +
                             "Press any key to return to the menu");
-                        Console.ReadLine();
+                        Console.ReadKey();
+                        Console.Clear();
 
                         break;
 
@@ -83,6 +85,8 @@ namespace Burya_Inventory
 
                     default:
                         Console.WriteLine("Error, please start from the beginning.");
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                 }
             } while (true);

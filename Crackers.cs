@@ -11,7 +11,7 @@ namespace Burya_Inventory
         public Crackers()
         {
             this.ShipCost = 0.57M;
-            this.Product = "Crackers0";
+            this.Product = "Crackers";
         }
         public decimal ShipCost { get; }
         public string Product { get; }
