@@ -2,8 +2,8 @@
 // Mark Burya
 // IT112 
 // NOTES: Notes the instructor should read
-// BEHAVIORS NOT IMPLEMENTED AND WHY: Are there any parts of the assignment 
-// you did not complete?
+// BEHAVIORS NOT IMPLEMENTED AND WHY: I forgot to implement a 10 item cap to my list however, I believe everything else
+// should work.
 namespace Burya_Inventory
 {
     class Program
@@ -33,7 +33,7 @@ namespace Burya_Inventory
 
                 void Show_Products(string product, int count)
                 {
-                    if (count == 1 || count == 0)
+                    if (count == 1)
                         Console.WriteLine(" " + product);
                     else
                         Console.WriteLine(" " + product + "s");
@@ -80,6 +80,7 @@ namespace Burya_Inventory
                         break;
 
                     case "6":
+                        Console.Clear();
                         Console.WriteLine("Total shipping cost for this order is $" + Shipments.Compute_Shipping()) ;
                         return;
 
